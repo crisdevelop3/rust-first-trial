@@ -1,14 +1,20 @@
 fn main() {
     println!("Hello, world!");
 
-    //Usamos {} para sustituir por variables.
-    println!("Hola {}, hoy es {}", "Cris", "viernes");
+    //We use {} to replace with variables.
+    println!("Hi {}, today is {}", "Cris", "friday");
     secondfn();
 }
 
 fn secondfn() {
     let mut a_number;
     let a_word: &str = "Ten";
+
+    // When a variable is not going to be used, you can name it with underscore
+    let _var_without_use = "This variable is not going to be used";
+
+    // We use &str when a variable will not change
+    // We use String if the variable is going to change
 
     a_number = 10;
 
@@ -65,7 +71,7 @@ fn tupla_test() {
 
     let tuple = ("first element", 2, true, 4.5);
 
-    println!("Primer elemento: {}", tuple.0);
+    println!("First element: {}", tuple.0);
 
     structs_test();
 }
